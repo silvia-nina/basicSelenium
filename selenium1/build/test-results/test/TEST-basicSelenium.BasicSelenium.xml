@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="basicSelenium.BasicSelenium" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-15T00:44:02" hostname="mbp-de-silvia" time="41.264">
+  <properties/>
+  <testcase name="verifyCRUDProject()" classname="basicSelenium.BasicSelenium" time="41.264"/>
+  <system-out><![CDATA[cleanup
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 44037
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+</testsuite>
