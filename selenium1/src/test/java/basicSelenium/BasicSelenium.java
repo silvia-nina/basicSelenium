@@ -43,15 +43,9 @@ public class BasicSelenium {
         driver.findElement(By.id("ctl00_MainContent_LoginControl1_TextBoxPassword")).sendKeys("12345");
         driver.findElement(By.id("ctl00_MainContent_LoginControl1_ButtonLogin")).click();
 
-        // Explicit Wait
-        //Thread.sleep(5000);
         WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         explicitWait.until(ExpectedConditions.elementToBeClickable(By.id("ctl00_HeaderTopControl1_LinkButtonLogout")));
 
-//        FluentWait fluentWait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(15))
-//                        .pollingEvery(Duration.ofMillis(100))
-//                                .ignoring(NoSuchElementException.class);
-//        fluentWait.until(ExpectedConditions.elementToBeClickable(By.id("ctl00_HeaderTopControl1_LinkButtonLogout")));
 
         Assertions.assertTrue(driver.findElement(By.id("ctl00_HeaderTopControl1_LinkButtonLogout")).isDisplayed()
                 ,"ERROR login was incorrect");
